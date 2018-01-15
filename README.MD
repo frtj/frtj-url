@@ -6,6 +6,14 @@ A simple lib to represent an URL.
 FrtjUrl url = FrtjUrlFactory.toUrl("https://example.com");
 ```
 
+..or if you are dealing with like, servlet and stuff...
+
+
+```
+HttpServletRequest request = ...
+
+FrtjServletUrl result = FrtjServletUrlFactory.toUrl(request);
+```
 
 #### Rationale:
 Maybe there is other, and better, out there that does a better job. I just made one.
